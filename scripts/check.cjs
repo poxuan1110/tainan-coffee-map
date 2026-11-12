@@ -32,6 +32,7 @@ assert.deepEqual(Object.keys(template).sort(),[...keys].sort(),'模板與資料�
 for(const file of ['index.html','app.js','styles.css','cafes.js']) assert(fs.existsSync(path.join(root,'dist',file)),`缺少 ${file}`);
 const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
 for(const match of html.matchAll(/(?:src|href)="\.\/([^"]+)"/g)) assert(fs.existsSync(path.join(root,'dist',match[1])),`失效資源 ${match[1]}`);
-for(const id of ['search','district','status','cards','pagination','previous','next','page-label','detail','map-context','edition-count']) assert(html.includes(`id="${id}"`),`缺少介面 ${id}`);
+for(const id of ['search','district','status','cards','pagination','previous','next','page-label','detail','map-context','map-address']) assert(html.includes(`id="${id}"`),`缺少介面 ${id}`);
 console.log(`PASS: ${rows.length} places; 153 baseline entries; basic-data-only schema; source URLs; valid dates; template and local assets.`);
 console.log(JSON.stringify({addresses:rows.filter(c=>c.address).length,unknownAddresses:rows.filter(c=>!c.address).length,statuses:Object.fromEntries(statuses.map(s=>[s,rows.filter(c=>c.status===s).length]))}));
+
