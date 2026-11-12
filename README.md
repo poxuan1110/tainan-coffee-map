@@ -1,5 +1,7 @@
 # 巷裡喝一杯｜台南咖啡廳地圖
 
+[瀏覽網站](https://poxuan1110.github.io/tainan-coffee-map/) · [Repository](https://github.com/poxuan1110/tainan-coffee-map) · [繳交草稿](SUBMISSION.md)
+
 以 AGENTS.md 驅動擴充的靜態網站。提供店家搜尋、行政區篩選、瀏覽器收藏、Google 地圖與可分享的店家筆記（例如 `#cafe/narrow-door`）。
 
 ## 本機使用
