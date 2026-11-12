@@ -1,6 +1,35 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="巷裡喝一杯：持續整理的台南咖啡廳散步地圖。探索行政區、收藏待訪店家，找到下一杯咖啡。"><title>巷裡喝一杯｜台南咖啡廳地圖</title><link rel="stylesheet" href="./styles.css"><script defer src="./cafes.js"></script><script defer src="./app.js"></script></head>
-<body><a class="skip" href="#main">跳至主要內容</a><header><a class="brand" href="#">巷裡喝一杯<span>TAINAN COFFEE NOTES</span></a><a href="#about">關於這份地圖 ↗</a></header>
-<main id="main"><section class="hero"><div><p class="eyebrow">慢一點，台南的日常提案 / 01</p><h1>轉進巷子，<br>找一杯自己的<span>台南。</span></h1><p class="intro">一份慢慢長大的咖啡口袋名單。<br>從街區出發，讓下一段散步有個落腳的地方。</p><a class="primary" href="#explore">開始找咖啡 ↓</a></div><div class="coffee-art" aria-hidden="true"><div class="orbit"></div><div class="cup"><div class="coffee">∿</div></div><span class="art-label">GOOD COFFEE.<br>SLOW DAYS.</span><span class="stamp">台南<br>散步中</span></div></section>
-<section id="explore"><div class="section-heading"><div><p class="eyebrow">THE COFFEE COLLECTION</p><h2>今天，想在哪裡停一下？</h2></div><span id="total"></span></div><div class="controls"><label>搜尋店家<input id="search" type="search" placeholder="店名、地址或特色…"></label><label>行政區<select id="district"><option value="">全部行政區</option></select></label><button id="favorites" aria-pressed="false">♡ 只看收藏</button><button id="reset">重設</button></div><p id="count" role="status"></p><div class="workspace"><div id="cards"></div><aside class="map-panel"><div class="map-title"><span class="eyebrow">COFFEE & THE CITY</span><h3 id="map-title">台南咖啡廳地圖</h3><p>點選店家，看看下一站在哪裡。</p></div><iframe id="map" title="台南咖啡廳位置地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><p class="map-note">地圖依店名與地址搜尋；若未載入，可使用店家卡片的 Google 地圖連結。</p></aside></div></section>
-<section id="detail" hidden tabindex="-1"></section><section id="about" class="about"><p class="eyebrow">A NOTE ABOUT THIS MAP</p><h2>一杯一杯，慢慢收集。</h2><p>這是一份持續整理的台南咖啡探索筆記，第一版收錄公開旅遊資料中的待訪店家，並非親訪評鑑。每間店都附資料來源與查閱日期；查閱日期不代表已確認目前營業。</p><p>營業時間、價格、低消與設施請以店家最新公告為準。收藏只儲存在這個瀏覽器，方便下次接著探索。</p></section></main><footer><span>巷裡喝一杯 © 2026</span><span>MADE FOR SLOW AFTERNOONS IN TAINAN</span></footer><noscript>請啟用 JavaScript，以瀏覽店家資料與地圖。</noscript></body></html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="巷裡喝一杯：以指定 Google 地圖共用清單建立的台南咖啡廳地圖第一版。依行政區探索、搜尋與收藏，只呈現店家基本資料。">
+<title>巷裡喝一杯｜台南咖啡廳地圖</title>
+<link rel="stylesheet" href="./styles.css"><script defer src="./cafes.js"></script><script defer src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header><a class="brand" href="#">巷裡喝一杯<span>TAINAN COFFEE NOTES</span></a><a href="#about">關於這份地圖 ↗</a></header>
+<main id="main">
+<section class="hero">
+<div><p class="eyebrow">台南咖啡廳地圖 / FIRST EDITION</p><h1>轉進巷子，<br>找一杯自己的<span>台南。</span></h1><p class="intro">從一份咖啡清單開始，慢慢認識台南。<br>按街區探索，收藏你的下一站。</p><a class="primary" href="#explore">開始找咖啡 ↓</a></div>
+<div class="coffee-art" aria-hidden="true"><div class="orbit"></div><div class="cup"><div class="coffee">∿</div></div><span class="art-label">GOOD COFFEE.<br>SLOW DAYS.</span><span class="stamp">台南<br>散步中</span></div>
+</section>
+<section id="explore">
+<div class="section-heading"><div><p class="eyebrow">THE COFFEE COLLECTION · V1.0</p><h2>今天，想在哪裡停一下？</h2></div><span id="total"></span></div>
+<div class="edition-note"><span>第一版 · <strong id="edition-count">153</strong> 個清單地點</span><p>依指定共用清單整理基本資料，不收錄心得、評論或評分。保留停歇業與失效紀錄，出發前請確認店家現況。</p><a href="https://maps.app.goo.gl/2gwzTaym2dCbxW796" target="_blank" rel="noopener noreferrer">查看原始清單 ↗</a></div>
+<div class="controls">
+<label for="search">搜尋店家<input id="search" type="search" placeholder="店名或地址…"></label>
+<label for="district">行政區<select id="district"><option value="">全部行政區</option></select></label>
+<label for="status">來源狀態<select id="status"><option value="">全部狀態</option><option value="unverified">未標示停歇業</option><option value="temporary-closed">暫時關閉</option><option value="permanently-closed">永久歇業</option><option value="removed">地點已不存在</option></select></label>
+<button id="favorites" aria-pressed="false">♡ 只看收藏</button><button id="reset">重設</button>
+</div>
+<p id="count" role="status" tabindex="-1"></p>
+<div class="workspace"><div><div id="cards"></div><nav id="pagination" aria-label="店家列表分頁"><button id="previous">← 上一頁</button><span id="page-label" aria-live="polite"></span><button id="next">下一頁 →</button></nav></div>
+<aside class="map-panel"><div class="map-title"><span class="eyebrow">COFFEE & THE CITY</span><h3 id="map-title">台南咖啡廳地圖</h3><p id="map-context">點選店家，看看下一站在哪裡。</p></div><iframe id="map" title="台南咖啡廳位置地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><p class="map-note">地圖依店名與地址搜尋。地址未確認者僅以店名搜尋，請核對結果；若未載入，可使用店家卡片的 Google 地圖連結。</p></aside></div>
+</section>
+<section id="detail" hidden tabindex="-1"></section>
+<section id="about" class="about"><p class="eyebrow">A NOTE ABOUT THIS MAP</p><h2>一份清單，是探索的起點。</h2><p>第一版以指定的「台南咖啡廳」Google 地圖共用清單為基礎，依原順序收錄 153 個地點。店名已適度去除宣傳文字與營業提醒，保留辨識名稱；地址整理自地圖基本資料。清單亦包含甜點店、茶館等地點，未擅自改成咖啡店分類。</p><p>本網站不使用清單作者的心得、Google 評論、評分或消費描述，也不代表親訪推薦。狀態為 2026-11-12 查閱當日的來源標示，並非即時營業資訊；未提供的地址明確標為待確認。</p><p>營業時間、價格、低消與設施請以店家最新公告為準。收藏只儲存在這個瀏覽器，方便下次接著探索。</p></section>
+</main>
+<footer><span>巷裡喝一杯 © 2026 · 第一版</span><span>MADE FOR SLOW AFTERNOONS IN TAINAN</span></footer>
+<noscript>請啟用 JavaScript，以瀏覽店家資料與地圖。<a href="https://maps.app.goo.gl/2gwzTaym2dCbxW796">查看原始清單</a></noscript>
+</body></html>

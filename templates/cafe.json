@@ -1,12 +1,12 @@
 {
   "id": "your-cafe-slug",
   "name": "店家名稱",
-  "district": "中西區",
-  "address": "經來源確認的完整地址",
-  "summary": "依資料撰寫的簡介，不假冒親訪心得。",
-  "tags": ["分類標籤"],
+  "district": null,
+  "address": null,
+  "status": "unverified",
+  "sourceIndex": null,
+  "sourceLabel": "實際查閱的來源名稱",
   "sourceUrl": "https://example.com/replace-with-real-source",
   "sourceUpdated": null,
-  "checkedAt": "YYYY-MM-DD",
-  "note": "資料確認狀態；未確認資訊請明確標示。"
+  "checkedAt": "YYYY-MM-DD"
 }
